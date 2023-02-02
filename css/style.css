@@ -1,0 +1,181 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner-p2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 30px;
+    color: orange;
+    font-weight: bold;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.canculytor__conteiner {
+    max-width: 810px;
+    border: 10px solid orange;
+    width: 100%;
+}
+
+.canculytor__display {
+    padding: 15px 10px;
+    background-color: black;
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+}
+
+.display__number {
+    transition: all 0.3s ease;
+}
+
+.display__number.__not-many__chars,
+.display__number.__double-chars,
+.display__number.__max-numbers {
+    border: 1px orange solid;
+    position: relative;
+}
+
+.display__number.__not-many__chars::before,
+.display__number.__double-chars::before,
+.display__number.__max-numbers::before {
+    content: "Багато символів";
+    position: absolute;
+    color: orange;
+    top: 0;
+    left: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    transform: translateY(-100%);
+}
+
+.display__number.__double-chars::before {
+    content: "Забагато знаків дій";
+}
+
+.display__number.__not-many__chars::before {
+    content: "Закрийте дужку";
+}
+
+.canculytor__buttons {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.star__button,
+.canculytor__button {
+    width: 33.0883%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    background-color: black;
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid orange;
+}
+
+.canculytor__button {
+    transition: background-color 0.7s ease;
+}
+
+.doryvnye__button {
+    width: 100%;
+}
+
+.canculytor__function {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.function__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24.93%;
+    padding: 10px;
+    background-color: black;
+    font-size: 36px;
+    color: orange;
+    font-weight: bold;
+    border: 1px solid orange;
+    transition: all 0.7s ease;
+}
+
+@media screen and (min-width: 768px) {
+    .function__button:hover {
+        color: black;
+    }
+
+    .canculytor__button:hover {
+        background-color: orange;
+    }
+}
+
+.duga__button {
+    width: 49.755%;
+}
+
+@media screen and (max-width: 855px) {
+    .canculytor__button {
+        width: 32.62%;
+    }
+
+    .duga__button {
+        width: 49.29%;
+    }
+
+    .doryvnye__button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425.99px) {
+    .canculytor__button {
+        font-size: 28px;
+    }
+}
+
+.return {
+    background-color: orange;
+    border: 1px solid transparent;
+    color: black;
+    border-radius: 10px;
+    padding: 20px 50px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.return:hover {
+    border-color: orange;
+    color: orange;
+    background-color: black;
+}

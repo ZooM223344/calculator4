@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page-2</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="conteiner-p2">
+        <h1 class="title">Схрелалі ти нажав отмена</h1>
+        <button class="return">Return</button>
+    </div>
+</body>
+<script>
+    const tegHOne = document.querySelector(".title");
+    const buttonR = document.querySelector(".return");
+    tegHOne.style.fontSize = "80px";
+    buttonR.addEventListener("click", function () {
+        window.location.href = '../pages-1.html';
+    });
+</script>
+
+</html>
